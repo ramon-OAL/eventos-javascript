@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Eventos</title>
+<script>
+
+function sobreEscribe(){alert('ENHORABUENA has pasado el mouse por encima');}
+function Abrir(){window.open('https://oalhuetortajar.com/', '_self');}
+function colorRojo(){document.getElementById('color').style.color='red';}
+function colorNegro(){document.getElementById('color').style.color='black';}
+
+function tamano(){document.getElementById('color').style.fontSize='90px';}
+
+
+</script>
+
+
+
+
+</head>
+
+<!--<body onload="alert('Hola buenos dias has abierto mi página')">-->
+
+<body>
+
+	<p onclick="alert('has hecho un clic')">Bienvenidos</p>
+
+	<button><p onunload="abreventana('Buenos Dias')">Estamos a miercoles</p></button>
+	
+	<button><p onkeydown="alert('Buenas tardes')">Estamos en Noviembre</p></button>
+
+	<button><p onkeypress="alert('Buenas Noches')">Ya mismo puente</p></button>
+	
+	<button><p onkeyup="alert('probando eventos')">Me llamo Ramón</p></button>
+
+
+<hr>
+
+<!--<<h2 onmousedown="alert('has pulsado un botón del raton')">Probando los eventos</h2>-->
+
+<!--<<h2 onmousemove="alert('has movido el ratón en el area')">Probando el ratón en el area</h2>-->
+
+<!--<<h2 onmouseout="alert('has movido el ratón fuera del area')">Probando ratón fuera del area</h2>-->
+
+<!--<<h2 onmouseup="alert('has levantado el botón del ratón')">probando el botón del ratón</h2>-->
+
+
+<!--<button><h2 ondblclick="alert('Muy bien has hecho doble clic')">Bienviendo al OAL</h2> </button>-->
+
+
+<!--< <h1 style="display:inline;"onmouseover="sobreEscribe()">Pasa por encima</h1>-->
+<br>
+
+<!--< <h1 style="display:none;"onmouseover="sobreEscribe()">Pasa por encima</h1>-->
+<br>
+
+<button onclick="Abrir()">Ir al OAL</button>
+
+
+
+<button><a target="_blank" href="https://oalhuetortajar.com/">IR AL OAL</a></button>
+</body>
+
+
+
+<h1 id="color">Esto cambia de color</h1>
+<button onmouseover="colorRojo()" onmouseout="colorNegro()">cambiar</button>
+
+<button onclick="tamano()">Tamaño</button>
+
+
+
+</html>
+
+
+
